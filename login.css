@@ -1,0 +1,12 @@
+#wrapper{
+	position: relative;
+}
+
+.landing-left{
+	float: left;
+	background-color: black;
+}
+
+.landing-right{
+	background-color: yellow;
+}

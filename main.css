@@ -125,6 +125,10 @@ h3.title {
     height: 10px;
     border-top: 2px solid #eee;
   }
+
+  span {
+    float: right;
+}
   .nav > .nav-links {
     position: absolute;
     display: block;

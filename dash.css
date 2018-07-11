@@ -2,17 +2,40 @@
 @import url(https://fonts.googleapis.com/css?family=Muli);
 
 body {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:flex;
-  margin:0;
-  padding:0;
-  background-color:#f0f0f0;
-  font-family:Muli, sans-serif;
-  color:#444;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* background-color: lightgrey; */
+    font-family: Muli, sans-serif;
+    color: #444;
 }
+
+ .profile-photo{
+    display: block;
+    width: 130px;
+    height : 130px;
+    border-radius :50%;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url('http://nickylew.com/wp-content/uploads/2017/05/nickylew-2017.jpg');
+    background-size: 230%;
+    background-position: 80% 0;
+        background-repeat: no-repeat;
+  }
+
+  .profile-info{
+    display:flex;
+      
+     max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    
+    }
+
 ul {
   list-style: ethiopic-halehame-om-et;
   margin-top:0;
@@ -44,6 +67,9 @@ h1 {
     letter-spacing:2px;
     background-color:#34363A;
     border-bottom:1px solid rgba(101, 116, 134, 0.57);
+}
+p#top {
+    border-bottom: solid;
 }
 h2 {
   font-size: 20px;
@@ -137,13 +163,13 @@ main {
 }
 .title {
   background-color: #fff;
-  border-bottom: 1px solid #C0C1C0;
-  height:60px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:flex;
+    border-bottom: 1px solid #C0C1C0;
+    height: 30vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
   
   & a {
     color: #AAA;
@@ -171,10 +197,12 @@ a:hover {
 }
 
 .larg {
-  max-width:960px;
-  margin:30px auto;
-  padding:0 30px;
-  
+ background-color: aliceblue;
+    max-width: 70vw;
+    margin: 0px auto;
+    padding: 30px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
   & div {
     background-color: #F7F7F7;
     border: 1px solid #E2E2E2;
@@ -295,3 +323,101 @@ h5 {
   color: #c6c6c6;
   margin-right: 4px;
 }
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+
+}
+
+
+.nav > .nav-header {
+  display: inline;
+}
+
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+    font-size: 20px;
+    color: #2196F3;
+    padding: 20px 6px 30px 40px;
+    float: left;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+      display: inline;
+    float: right;
+    font-size: 7px;
+    padding: 10px;
+    padding-right: 6vw;
+}
+
+.nav > .nav-links > a {
+      font-size: 1.5vw;
+    display: inline-block;
+    padding: 10px 10px 30px 10px;
+    text-decoration: none;
+    color: #2196F3
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #28d;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+  

@@ -7,16 +7,25 @@ body {
   margin: 0px;
 }
 
-
+.message {
+    padding-top: 30vh;
+    color: antiquewhite;
+    text-align: center;
+}
 
 .backLeft {
   position: absolute;
   left: 0;
   width: 50vw;
   height: 100vh;
-  background: #e74c3c url(https://download.unsplash.com/photo-1428279148693-1cf2163ed67d);
+  background: #e74c3c url(../img/login_img.jpg);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
 }
 
 #back {
@@ -146,11 +155,12 @@ body {
   border-color: #888;
 }
 
-.login input[type="submit"] {
+.submit {
   background: #28d;
   border-color: transparent;
   color: #fff;
   cursor: pointer;
+  text-align: center;
 }
 
 .login input[type="submit"]:hover {

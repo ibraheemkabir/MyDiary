@@ -219,7 +219,7 @@ a:hover {
 }
 
 .nav > .nav-links > a {
-      font-size: 1.5vw;
+      font-size: 1.1vw;
     display: inline-block;
     padding: 10px 10px 30px 10px;
     text-decoration: none;
@@ -284,6 +284,7 @@ a:hover {
 }
 
 
+
 html {
   background: #878476;
 }
@@ -296,17 +297,13 @@ width: 80%;
   text-align: center;
 }
 
-/** Switch
- -------------------------------------*/
+
 
 .switch input {
   position: absolute;
   opacity: 0;
 }
 
-/**
- * 1. Adjust this to size
- */
 
 .switch {
   display: inline-block;

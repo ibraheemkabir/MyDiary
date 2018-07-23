@@ -16,14 +16,13 @@ body {
 
 button#gtstarted{
 
-    width: 20vw;
+    width: 15vw;
     height: 4vw;
   background-color: #0d4992;
   border: none;
   border-radius: 4px;
   color: #ccc;
   font-size: 2vw;
-  font-family: 'Prata';
   letter-spacing: 2px;
  
 }
@@ -293,7 +292,7 @@ h5 {
 .nav > .nav-links > a {
       font-size: 1.1vw;
     display: inline-block;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: #2196F3
 }
